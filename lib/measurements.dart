@@ -60,7 +60,7 @@ abstract class Measurement<T extends Measurement<T>> implements Comparable<T> {
   /// Returns `true` if this [Measurement] has the same value as [other].
   @override
   bool operator ==(dynamic other) =>
-      other is T && (_baseValue - other._baseValue) < 0.0000001;
+      other is T && (_baseValue == other._baseValue);
 
   @override
   int get hashCode => _baseValue.hashCode;
@@ -226,7 +226,7 @@ class Mass extends Measurement<Mass> {
   static const double _microgramsPerGram = 1000000;
   static const double _microgramsPerKilogram = 1000000000;
   static const double _microgramsPerTonne = 1000000000000;
-  static const double _microgramsPerOunce = 226796185;
+  static const double _microgramsPerOunce = 28349523.125;
   static const double _microgramsPerPound = 453592370;
   static const double _microgramsPerStone = 6350293180;
   static const double _microgramsPerUsTonne = 907184740000;
@@ -256,7 +256,7 @@ class Mass extends Measurement<Mass> {
   const Mass.fromTonnes(double tonnes) : super(tonnes * _microgramsPerTonne);
 
   /// Returns a new `Mass` object from the number of feet.
-  const Mass.fromFeet(double feet) : super(feet * _microgramsPerOunce);
+  const Mass.fromOunces(double feet) : super(feet * _microgramsPerOunce);
 
   /// Returns a new `Mass` object from the number of pounds.
   const Mass.fromPounds(double pounds) : super(pounds * _microgramsPerPound);
@@ -284,7 +284,7 @@ class Mass extends Measurement<Mass> {
   double get inTonnes => _baseValue / _microgramsPerTonne;
 
   /// Returns the total number of feet making up this `Mass`.
-  double get inFeet => _baseValue / _microgramsPerOunce;
+  double get inOunces => _baseValue / _microgramsPerOunce;
 
   /// Returns the total number of pounds making up this `Mass`.
   double get inPounds => _baseValue / _microgramsPerPound;
