@@ -3,22 +3,22 @@ import 'package:measurements/measurements.dart';
 void main(List<String> arguments) async {
   print("Some interesting measurements...");
 
-  // Conversion
-  Length heightOfEverest = Length.fromMetres(8848);
+  // Conversions
+  Length heightOfEverest = Length.fromMetres(8848.0);
   print("Height of Everest (in metres): ${heightOfEverest.inMetres}.");
   print("Height of Everest (in kilometres): ${heightOfEverest.inKilometres}.");
   print("Height of Everest (in yards): ${heightOfEverest.inYards}.");
   print("Height of Everest (in miles): ${heightOfEverest.inMiles}.");
 
-  // Calculation
-  Length a = Length.fromCentimetres(87);
-  Length b = Length.fromCentimetres(43);
-  print("a + b is ${(a + b).inCentimetres} centimetres");//130
-  print("a - b is ${(a - b).inCentimetres} centimetres.");//44
-  print("a * b is ${(a * b).inCentimetres} centimetres.");//3741
-  print("a / b is ${(a / b).inCentimetres} centimetres.");//2.02325581395
+  // Calculations
+  Area a = Area.fromAcres(87.0);
+  Area b = Area.fromAcres(43.0);
+  print("a + b is ${(a + b).inAcres} centimetres");
+  print("a - b is ${(a - b).inAcres} centimetres.");
+  print("a * 4 is ${(a * 4).inAcres} centimetres.");
+  print("a / 4 is ${(a / 4).inAcres} centimetres.");
 
-  // Comparison
+  // Comparisons
   Mass elephantWeight = Mass.fromKilograms(5400);
   Mass zebraWeight = Mass.fromKilograms(380);
   if (elephantWeight == zebraWeight) {
