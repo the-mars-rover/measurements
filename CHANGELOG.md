@@ -1,3 +1,7 @@
+## 0.0.4
+
+* Documentation updates
+
 ## 0.0.3
 
 * Added support for `Area` measurements
