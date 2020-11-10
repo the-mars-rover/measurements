@@ -13,10 +13,10 @@ void main(List<String> arguments) async {
   // Calculations
   Area a = Area.fromAcres(87.0);
   Area b = Area.fromAcres(43.0);
-  print("a + b is ${(a + b).inAcres} centimetres");
-  print("a - b is ${(a - b).inAcres} centimetres.");
-  print("a * 4 is ${(a * 4).inAcres} centimetres.");
-  print("a / 4 is ${(a / 4).inAcres} centimetres.");
+  print("a + b is ${(a + b).inAcres} acres.");
+  print("a - b is ${(a - b).inAcres} acres.");
+  print("a * 4 is ${(a * 4).inAcres} acres.");
+  print("a / 4 is ${(a / 4).inAcres} acres.");
 
   // Comparisons
   Mass elephantWeight = Mass.fromKilograms(5400);

@@ -1,11 +1,11 @@
 <!-- PROJECT LOGO -->
 <p align="right">
 <a href="https://pub.dev">
-<img src="https://raw.githubusercontent.com/born-ideas/measurements/master/assets/project_badge.png" height="100" alt="Flutter">
+<img src="https://raw.githubusercontent.com/born-ideas/measurements/master/assets/project_badge.png" height="100" alt="badge">
 </a>
 </p>
 <p align="center">
-<img src="https://raw.githubusercontent.com/born-ideas/measurements/master/assets/project_logo.png" height="100" alt="Masterpass Example" />
+<img src="https://raw.githubusercontent.com/born-ideas/measurements/master/assets/project_logo.png" height="100" alt="logo" />
 </p>
 
 <!-- PROJECT SHIELDS -->
@@ -85,10 +85,10 @@ import 'package:measurements/measurements.dart';
 void main(List<String> arguments) async {
   Area a = Area.fromAcres(87.0);
   Area b = Area.fromAcres(43.0);
-  print("a + b is ${(a + b).inAcres} centimetres");
-  print("a - b is ${(a - b).inAcres} centimetres.");
-  print("a * 4 is ${(a * 4).inAcres} centimetres.");
-  print("a / 4 is ${(a / 4).inAcres} centimetres.");
+  print("a + b is ${(a + b).inAcres} acres.");
+  print("a - b is ${(a - b).inAcres} acres.");
+  print("a * 4 is ${(a * 4).inAcres} acres.");
+  print("a / 4 is ${(a / 4).inAcres} acres.");
 }
 ```
 
