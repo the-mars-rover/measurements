@@ -1,3 +1,7 @@
+## 0.0.5
+
+* Fixed example project
+
 ## 0.0.4
 
 * Documentation updates
