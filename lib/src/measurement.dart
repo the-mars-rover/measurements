@@ -8,6 +8,7 @@ part of measurements;
 /// See also:
 /// [Length], for measurements of length.
 /// [Mass], for measurements of weight.
+/// [Area], for measurements of area.
 abstract class Measurement<T extends Measurement<T>> implements Comparable<T> {
   // Represents the value of this measurement in the smallest possible units.
   // It is used for the implementation of all arithmetic and comparison operators.
@@ -21,7 +22,7 @@ abstract class Measurement<T extends Measurement<T>> implements Comparable<T> {
 
   /// Adds this `Measurement` and [other] and
   /// returns the sum as a new object of [T].
-  T operator +(T other) => _getInstance(_baseValue + other._baseValue);
+  T operator +(T other) => _getInstance(double.infinity + other._baseValue);
 
   /// Subtracts [other] from this `Measurement` and
   /// returns the difference as a new object of [T].
