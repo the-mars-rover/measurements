@@ -1,6 +1,6 @@
 name: measurements
 description: A dart package providing basic classes for working with measurements such as Length and Mass.
-version: 0.0.5
+version: 0.0.6
 homepage: https://github.com/born-ideas/measurements
 
 environment:

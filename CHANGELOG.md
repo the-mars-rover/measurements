@@ -1,3 +1,7 @@
+## 0.0.6
+
+* Added zero-valued constants for each measurement
+
 ## 0.0.5
 
 * Fixed example project
