@@ -22,6 +22,9 @@ part of measurements;
 /// See [Measurement] for the collection of arithmetic and comparison operators
 /// which this class provides.
 class Length extends Measurement<Length> {
+  /// A zero-valued 'Length' constant.
+  static const Length zero = const Length.fromNanometres(0);
+
   static const double _nanometresPerMicrometre = 1000;
   static const double _nanometresPerMillimetre = 1000000;
   static const double _nanometresPerCentimetre = 10000000;

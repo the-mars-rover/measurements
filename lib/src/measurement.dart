@@ -8,6 +8,7 @@ part of measurements;
 /// See also:
 /// [Length], for measurements of length.
 /// [Mass], for measurements of weight.
+/// [Area], for measurements of area.
 abstract class Measurement<T extends Measurement<T>> implements Comparable<T> {
   // Represents the value of this measurement in the smallest possible units.
   // It is used for the implementation of all arithmetic and comparison operators.
