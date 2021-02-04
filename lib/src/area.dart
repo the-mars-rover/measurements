@@ -20,6 +20,9 @@ part of measurements;
 /// See [Measurement] for the collection of arithmetic and comparison operators
 /// which this class provides.
 class Area extends Measurement<Area> {
+  /// A zero-valued 'Area' constant.
+  static const Area zero = const Area.fromSquareCentimetres(0);
+
   static const double _squareCentimetrePerSquareMetre = 10000;
   static const double _squareCentimetrePerSquareKilometre = 10000000000;
   static const double _squareCentimetrePerSquareInch = 16129 / 2500;
@@ -49,7 +52,8 @@ class Area extends Measurement<Area> {
 
   /// Returns a new `Area` object from the radius of a circle.
   factory Area.fromCircle(Length radius) {
-    return Area.fromSquareCentimetres(math.pi * math.pow(radius.inCentimetres, 2));
+    return Area.fromSquareCentimetres(
+        math.pi * math.pow(radius.inCentimetres, 2));
   }
 
   /// Returns a new `Area` object from the number of cm².

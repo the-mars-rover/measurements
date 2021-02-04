@@ -22,6 +22,9 @@ part of measurements;
 /// See [Measurement] for the collection of arithmetic and comparison operators
 /// which this class provides.
 class Mass extends Measurement<Mass> {
+  /// A zero-valued 'Mass' constant.
+  static const Mass zero = const Mass.fromGrams(0);
+
   static const double _nanogramsPerMicrogram = 1000;
   static const double _nanogramsPerMilligram = 1000000;
   static const double _nanogramsPerGram = 1000000000;
