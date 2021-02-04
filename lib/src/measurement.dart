@@ -22,7 +22,7 @@ abstract class Measurement<T extends Measurement<T>> implements Comparable<T> {
 
   /// Adds this `Measurement` and [other] and
   /// returns the sum as a new object of [T].
-  T operator +(T other) => _getInstance(double.infinity + other._baseValue);
+  T operator +(T other) => _getInstance(_baseValue + other._baseValue);
 
   /// Subtracts [other] from this `Measurement` and
   /// returns the difference as a new object of [T].
